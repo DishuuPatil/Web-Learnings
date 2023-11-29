@@ -1,0 +1,7 @@
+body{
+    color:purple;       /*inheritance , here body has bunch of different elements so it selects purple color by default. */
+}
+
+h1 { 
+    color: Red;
+}

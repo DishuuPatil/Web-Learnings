@@ -1,0 +1,52 @@
+div {
+
+    width: 1200px;
+    height: 100px;
+    margin: 50px;
+}
+h1 {
+    
+    background-color: #90e0ef;
+    width: 150px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+#one {
+    background-color: #fae1dd;
+    border-width: 5px;
+    border-color: #468faf;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 25% 10%;
+    padding: 25px 10px 10px 20px;       /*Sequence= top-right-bottom-left*/
+    
+}
+
+#two {
+    background-color:#fcd5ce;
+    border-width: 5px;
+    border-color: #1d3557;
+    border-style: dashed;
+    border-left-width: 6px;
+    border-radius: 10px 100px / 120px;
+    padding: 30px 10px 0px 20px;
+}
+
+#three {
+    background-color: #fec5bb;
+    border: 4px solid #468faf;
+    border-right-style: dashed;
+    box-sizing: border-box;
+    border-radius: 10%;
+    padding: 25px 5px 0px 20px;
+}
+button {
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: #b7e4c7;
+    color: #d90429;
+    border: 2px solid #081c15;
+    padding: 10px;
+    border-radius: 15%;
+    margin-top: 20px;
+}

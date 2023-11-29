@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Trial</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="Somewhat">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+
+            <label for="pass">Enter a Password</label>
+            <input id="pass" type="password" placeholder="password" name="password">
+
+        </p>
+        <p>
+
+            <label for="number">Enter a Number</label>
+            <input id="number" type="number" placeholder="Enter a number" name="num" min="1000" max="100000">
+
+            <!--Or This can be done in following way also-->
+            <label>Enter a Color
+                <input type="color" name="color">
+            </label>
+        </p>
+        <!--This button doesn't submit the form b/c of type attribute-->
+        <button type="button">Regular button(won't submi)</button>
+        <!--This button submits the form-->
+        <button>Submit</button>
+        <!--This is also submit form-->
+        <input type="submit" value="I am a button">
+    </form>
+    <hr>
+    <!--This is not going to submit form ,This is outside of form so, no default behavior-->
+    <button>Outside of form</button>
+
+    <form action=" https://www.google.com/search">
+        <h2>Search On Goggle</h2>
+        <input type="text" name=q>
+        <button>Goggle</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <h2>Search On Youtube</h2>
+        <input type="text" name="search_query">
+        <button>Youtube</button>
+    </form>
+    <form action="https://www.flipkart.com/search">
+        <h2>Search on Flipcard</h2>
+        <input type="text" name="q">
+        <button>Flipcard</button>
+    </form>
+
+    <!--Let's create a checkbox-->
+    <form action="sparrows">
+        <h3>Try a Checkbox</h3>
+        <input id="agree" type="checkbox" name="agree_t&c">
+        <label for="agree">I agree with terms and conditions</label>
+        <!--Checking a radio button-->
+        <p>
+        <h3>Size Chart</h3>
+
+        <label for="xs">XS:</label>
+        <input id="xs" type="radio" name="size" value="extra_small">
+        <label for="s">S:</label>
+        <input id="s" type="radio" name="size" value="small">
+        <label for="l">L:</label>
+        <input id="l" type="radio" name="size" value="large">
+
+        <h2>Cake Choices</h2>
+        <label for="cake">Choose a Cake</label>
+        <select id="cake" name="cake">
+            <option value="vanilla">Vanilla</option>
+            <option value="choco">Chocolate</option>
+            <option value="truffle">Chocolate Truffle</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="pineapple">Pineapple</option>
+        </select>
+        <br>
+
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" id="cheese" name="cheese_level" min="0" max="50" value="20" step="5">
+        </p>
+
+        <p>
+            <label for="request">Any special request?</label>
+            <br>
+            <textarea id="request" name="request" rows="5" cols="40" placeholder="suggestions"></textarea>
+        </p>
+        <button>Submit</button>
+        </p>
+
+        <h2>Form Validation</h2>
+        <form action="Valid">
+
+            <p>
+                <label for="valid">Enter First Name:</label>
+                <input type="text" name="validation" id="valid" placeholder="Full Name" required>
+
+                <label for="user">Enter Username:</label>
+                <input id="user" name="user" type="text" placeholder="username" minlength="5" maxlength="10" required>
+
+                <label for="mail">Enter a Email:</label>
+                <!--another way of validation , using some pattern matching types.-->
+                <input id="mail" name="mail" type="email" placeholder="email" minlength="10" maxlength="20" required>
+
+                <label for="pass">Enter a Password:</label>
+                <input id="pass" name="pass" type="text" placeholder="password" minlength="8" maxlength="15" required>
+
+                <label for="url">Enter a url:</label>
+                <input id="url" name="url" type="url" placeholder="url" required>
+                <input type="url">
+
+                <br>
+            </p>
+            <button>Submit</button>
+        </form>
+
+    </form>
+    <h4>Learning of today(21-07-21)
+        <br>
+        button,name attribute,radio button,select,value,checkbox
+    </h4>
+</body>
+
+</html>

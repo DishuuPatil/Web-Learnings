@@ -1,0 +1,44 @@
+html{
+    font-size: 20px;    /*rem's size is depend on root size*/
+}
+#percentages{
+    background-color: #cb997e;
+    width: 600px;
+    height: 600px;
+}
+#percentages div{
+    background-color: #ffe8d6;
+    width: 50%;
+    height: 50%;
+}
+#ems {
+    font-size: 15px;
+}
+#ems p{
+    font-size: 1em;
+}
+#ems h2{ 
+    font-size: 3em;
+    margin-left: 1em;
+}
+#ems h3{
+    font-size: 1.5em;
+}
+button{
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #fec5bb;
+}
+ul{
+    font-size: 1.5em;
+}
+#rems h2{
+    font-size: 3rem;
+}
+#rems h3{
+    font-size: 2rem;
+}
+#rems ul{
+    font-size: 0.8rem;
+}

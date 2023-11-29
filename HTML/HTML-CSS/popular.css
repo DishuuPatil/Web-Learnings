@@ -1,0 +1,92 @@
+*{                      /*Universal selector*/
+    color:blue;
+}
+button {                /*Element selector*/
+    color: #f8edeb;
+    background-color: #023047;
+}
+h1,h2 {                 /*selector List*/
+    color: #023047;
+}
+#search {
+    color: #6a040f;
+    background-color: #ffe8d6; 
+}
+#signup {
+    color: #f1faee;
+    background-color: #ff758f;
+}
+
+span{
+    color: #023e8a;
+}
+.tag{                                         /*'.' selector is used for class.*/ 
+    background-color: #c9184a;             /* class can be applied to multiple elements it's creating class elements so we can have different groups and style them similarly.*/                                                               
+    color: #edf2fb ;
+}
+.post a { 
+    text-decoration: none;                                  /* Descendent selector , it select all <a>'s that are nested inside "post" class*/
+    color: #c9184a; 
+}
+/*adjacent selector*/
+h2 + button {                               /* it will select all buttons after h2*/
+    font-size: 15px;
+}
+/*Direct-Descendent selector*/
+footer > a{
+    color:maroon;
+}
+/*Attribute selector*/
+input[type="password"]{
+    color: greenyellow;
+}
+
+/*hover*/
+.post a:hover{ 
+    text-decoration: underline;
+}
+/*active*/
+.post button:active{
+        background-color:rgb(92, 49, 247);
+}
+/*nth-of-type*/
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+/*Pseudo elements*/
+/*first-letter*/
+h2::first-letter{
+    color:#f35d07;
+    font-size: 30px;
+}
+/*first-line*/
+p::first-line{
+    color: #f35d07;
+}
+/*selection*/
+p::selection{
+    background-color: #f7eb4b;
+}
+/*Check the specificity*/
+
+/*hover*/
+.post button:hover{
+    background-color: hotpink;
+    color:lavender;
+}
+
+button:hover{
+    background-color: rgb(255, 47, 47)   !important;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
